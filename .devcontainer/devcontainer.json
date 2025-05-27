@@ -1,0 +1,30 @@
+{
+  "name": "JavaScript Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "steoates.autoimport",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.code-runner",
+        "wix.vscode-import-cost",
+        "xabikos.JavaScriptSnippets",
+        "ritwickdey.LiveServer",
+        "mohitk05.multiple-clipboards",
+        "xabikos.ReactSnippets",
+        "robinbentley.sass-indented",
+        "mhutchie.git-graph",
+        "vscode-icons-team.vscode-icons"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "remoteUser": "node"
+}
